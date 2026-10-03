@@ -1,0 +1,13 @@
+:root { --bg:#0D0F12; --sheet:#161A20; --ink:#EBDCC6; --muted:#B4A790; --line:#2C3139; --accent:#C9A96B; --red:#F2836F; color-scheme: dark; }
+@media (prefers-color-scheme: light) { :root { --bg:#EBDCC6; --sheet:#F5ECDD; --ink:#0D0F12; --muted:#4F473C; --line:#CDBB9C; --accent:#6E5426; --red:#8B1E1E; color-scheme: light; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 -apple-system, "Segoe UI", Roboto, Inter, sans-serif; }
+main { max-width:680px; margin:0 auto; padding:48px 20px 80px; }
+h1, h2 { font-family: "Playfair Display", Georgia, "Times New Roman", serif; line-height:1.2; }
+h1 { font-size:40px; margin:8px 0 16px; }
+h2 { font-size:24px; margin:40px 0 8px; }
+.kicker { color:var(--accent); font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; }
+.muted { color:var(--muted); }
+a { color:var(--accent); }
+nav { display:flex; gap:20px; flex-wrap:wrap; border-bottom:1px solid var(--line); padding-bottom:12px; font-size:15px; }
+.card { background:var(--sheet); border:1px solid var(--line); border-radius:6px; padding:16px 20px; }
